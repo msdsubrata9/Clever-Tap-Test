@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CleverTap Web Application</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- CleverTap JS Integration -->
+    <script type="text/javascript">
+      var clevertap = { accountId: "Z44-Z4K-K65Z", region: "us1" };
+      (function () {
+        var wzrk = document.createElement("script");
+        wzrk.type = "text/javascript";
+        wzrk.async = true;
+        wzrk.src = "https://d2r1yp2w7bby2u.cloudfront.net/js/clevertap.min.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(wzrk, s);
+      })();
+    </script>
+  </head>
+  <body>
+    <h1>CleverTap Web Application</h1>
+    <form id="signupForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input
+        type="tel"
+        id="phone"
+        placeholder="Phone Number (with country code)"
+        required
+      />
+      <input type="date" id="dob" placeholder="Date of Birth" required />
+      <button type="button" id="loginButton">Login</button>
+      <button type="button" id="profileButton">Profile Push</button>
+      <button type="button" id="eventButton">Raise Event</button>
+      <button type="button" id="askPushButton">Ask For Push</button>
+    </form>
+    <script src="./Index.js"></script>
+  </body>
+</html>
