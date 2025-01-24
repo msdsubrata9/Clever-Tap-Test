@@ -42,7 +42,7 @@ document.getElementById("eventButton").addEventListener("click", () => {
     DateValue: new Date(),
   });
 
-  alert("Custom event raised!");
+  alert("Custom event raised form CleverTap!");
 });
 
 document.getElementById("askPushButton").addEventListener("click", () => {
@@ -55,5 +55,5 @@ document.getElementById("askPushButton").addEventListener("click", () => {
     okButtonColor: "#f28046",
   });
 
-  alert("Push notification prompt triggered!");
+  alert("Push notification prompt triggered form CleverTap!");
 });
